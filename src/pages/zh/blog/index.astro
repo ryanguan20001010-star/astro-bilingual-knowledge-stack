@@ -1,0 +1,27 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import { sortPostsByDate } from '../../../utils/content';
+
+const posts = await getCollection('blog', ({ data }) => {
+  return data.locale === 'zh' && !data.draft;
+});
+const sortedPosts = sortPostsByDate(posts);
+---
+
+<BaseLayout title="博客 | 双语知识栈" description="文章和更新。">
+  <h1 class="text-3xl font-bold mb-8">博客</h1>
+  
+  <div class="space-y-6">
+    {sortedPosts.map(post => (
+      <article class="p-6 border border-neutral-200 rounded-lg">
+        <h2 class="text-xl font-semibold mb-2">
+          <a href={`/zh/blog/${post.slug}`} class="hover:text-accent">{post.data.title}</a>
+        </h2>
+        <p class="text-neutral-600 mb-4">{post.data.description}</p>
+        <time class="text-sm text-neutral-400">{post.data.pubDate.toLocaleDateString('zh-CN')}</time>
+      </article>
+    ))}
+    {sortedPosts.length === 0 && <p class="text-neutral-500">暂无文章。</p>}
+  </div>
+</BaseLayout>

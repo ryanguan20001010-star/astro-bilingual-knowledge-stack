@@ -1,0 +1,27 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import { sortPostsByDate } from '../../../utils/content';
+
+const posts = await getCollection('blog', ({ data }) => {
+  return data.locale === 'en' && !data.draft;
+});
+const sortedPosts = sortPostsByDate(posts);
+---
+
+<BaseLayout title="Blog | Bilingual Stack" description="Articles and updates.">
+  <h1 class="text-3xl font-bold mb-8">Blog</h1>
+  
+  <div class="space-y-6">
+    {sortedPosts.map(post => (
+      <article class="p-6 border border-neutral-200 rounded-lg">
+        <h2 class="text-xl font-semibold mb-2">
+          <a href={`/en/blog/${post.slug}`} class="hover:text-accent">{post.data.title}</a>
+        </h2>
+        <p class="text-neutral-600 mb-4">{post.data.description}</p>
+        <time class="text-sm text-neutral-400">{post.data.pubDate.toLocaleDateString('en-US')}</time>
+      </article>
+    ))}
+    {sortedPosts.length === 0 && <p class="text-neutral-500">No posts yet.</p>}
+  </div>
+</BaseLayout>

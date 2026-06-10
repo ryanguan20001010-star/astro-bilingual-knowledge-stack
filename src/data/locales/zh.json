@@ -1,0 +1,212 @@
+{
+  "site": {
+    "name": "fengshuiism",
+    "tagline": "调和你的空间"
+  },
+  "nav": {
+    "home": "首页",
+    "blog": "文章",
+    "tools": "工具",
+    "kuaCalculator": "本命卦计算器",
+    "items": "风水好物",
+    "search": "搜索",
+    "about": "关于"
+  },
+  "footer": {
+    "copyright": "© 2025 fengshuiism 版权所有",
+    "privacy": "隐私政策",
+    "terms": "使用条款",
+    "affiliate": "联盟声明",
+    "rss": "RSS 订阅"
+  },
+  "blog": {
+    "latestArticles": "最新文章",
+    "readMore": "阅读更多",
+    "publishedOn": "发布于",
+    "updatedOn": "更新于",
+    "byAuthor": "作者",
+    "categories": {
+      "bedroom": "卧室",
+      "living-room": "客厅",
+      "office": "办公室",
+      "kitchen": "厨房",
+      "bathroom": "卫生间",
+      "general": "综合",
+      "courtyard": "庭院",
+      "outdoor": "外部"
+    },
+    "noArticles": "该分类暂无文章。",
+    "relatedArticles": "相关文章",
+    "difficulty": {
+      "label": "难度",
+      "beginner": "入门",
+      "intermediate": "进阶",
+      "advanced": "高级",
+      "expert": "专家",
+      "all": "全部难度"
+    }
+  },
+  "calculator": {
+    "title": "本命卦计算器",
+    "subtitle": "发现你的个人风水方位",
+    "yearLabel": "出生年份",
+    "genderLabel": "性别",
+    "male": "男",
+    "female": "女",
+    "earlyYearLabel": "出生于1月1日至2月3日之间？",
+    "calculate": "计算本命卦",
+    "result": "您的本命卦",
+    "trigram": "卦象",
+    "group": "命组",
+    "eastGroup": "东四命",
+    "westGroup": "西四命",
+    "auspicious": "吉方位",
+    "inauspicious": "凶方位"
+  },
+  "items": {
+    "title": "风水好物清单",
+    "subtitle": "精选物品提升您的空间能量",
+    "filterByCategory": "按类别筛选",
+    "filterByElement": "按五行筛选",
+    "allCategories": "全部类别",
+    "allElements": "全部五行",
+    "buyOnAmazon": "亚马逊购买",
+    "placement": "推荐摆放位置",
+    "element": "五行属性",
+    "searchPlaceholder": "搜索物品..."
+  },
+  "cookie": {
+    "message": "我们使用 Cookie 来提升您的体验并提供个性化广告。",
+    "acceptAll": "全部接受",
+    "rejectAll": "全部拒绝",
+    "learnMore": "了解更多"
+  },
+  "errors": {
+    "404": {
+      "title": "页面未找到",
+      "message": "您访问的页面不存在。",
+      "backHome": "返回首页"
+    },
+    "500": {
+      "title": "服务器错误",
+      "message": "出了点问题，请稍后再试。"
+    }
+  },
+  "share": {
+    "copyLink": "复制链接",
+    "copied": "已复制！",
+    "shareOn": "分享到"
+  },
+  "scanner": {
+    "title": "像素风水扫描仪",
+    "subtitle": "30秒扫描您的房间风水",
+    "steps": {
+      "select": "选择房间",
+      "draw": "绘制布局",
+      "orient": "设置方向",
+      "result": "查看结果"
+    },
+    "rooms": {
+      "bedroom": {
+        "label": "卧室",
+        "subtitle": "睡眠与感情"
+      },
+      "office": {
+        "label": "书房",
+        "subtitle": "财运与专注"
+      },
+      "living_room": {
+        "label": "客厅",
+        "subtitle": "家庭和谐"
+      },
+      "kitchen": {
+        "label": "厨房",
+        "subtitle": "健康与财运"
+      },
+      "dining_room": {
+        "label": "餐厅",
+        "subtitle": "家庭凝聚"
+      },
+      "kids_room": {
+        "label": "儿童房",
+        "subtitle": "成长与学业"
+      }
+    },
+    "canvas": {
+      "drawMode": "绘制",
+      "eraseMode": "擦除",
+      "doorMode": "标门",
+      "clear": "清除全部",
+      "undo": "撤销",
+      "doorHint": "点击边缘格子放置门的位置",
+      "proportionHint": "画出房间的大致形状即可，无需精确尺寸。",
+      "hallwayHint": "提示：如果房间有入户走廊，请先画出走廊，再把门放在走廊尽头。"
+    },
+    "compass": {
+      "title": "校准方向",
+      "autoMode": "自动（传感器）",
+      "manualMode": "手动",
+      "permissionRequest": "启用罗盘传感器以自动检测方向",
+      "enableSensor": "启用传感器",
+      "manualHint": "旋转以对齐您房间的实际朝向",
+      "snapHint": "已吸附到{direction}",
+      "currentAngle": "{angle}°"
+    },
+    "result": {
+      "yearLabel": "飞星年份",
+      "wealthLabel": "财位",
+      "sicknessLabel": "病符位",
+      "wenchangLabel": "文昌位",
+      "peachBlossomLabel": "桃花位",
+      "taiChiLabel": "太极点",
+      "saveImage": "保存图片",
+      "generating": "生成中...",
+      "shareQuote": "30秒完成{roomType}风水诊断！🎯",
+      "sectorActivated": "您的{direction}方位已激活！请保持此区域整洁明亮。",
+      "sectorNotActivated": "{direction}方位覆盖较少。可考虑使用镜子象征性扩展此区域。"
+    },
+    "advice": {
+      "bedroom": {
+        "wealth": "在此处放置红色台灯或水晶，睡眠时激活财运能量。",
+        "sickness": "避免将床放在此区域。添加金属风铃化解负能量。",
+        "missing": "您的卧室缺少财位角。在相邻墙壁放置镜子，象征性地延伸空间。"
+      },
+      "office": {
+        "wealth": "保持此区域明亮整洁。招财植物可增强财运能量。",
+        "sickness": "工作时避免面对此方向。使用盐灯净化能量。",
+        "missing": "在此区域附近添加小型喷泉或水景以招财。"
+      },
+      "living_room": {
+        "wealth": "将主座椅朝向此方位以增强财运。",
+        "sickness": "避免在此区域放置沙发或椅子。添加绿植中和负能量。",
+        "missing": "在墙上挂镜子象征性地补全此角落。"
+      },
+      "kitchen": {
+        "wealth": "保持炉灶清洁且功能正常。经常烹饪以激活财运能量。",
+        "sickness": "确保此区域通风良好。避免存放过期食物。",
+        "missing": "在台面上放置小型植物以延伸厨房能量。"
+      },
+      "dining_room": {
+        "wealth": "经常举办聚会。圆桌可增强家庭和谐与财运。",
+        "sickness": "避免在餐桌上争吵。使用柔和灯光保持和平。",
+        "missing": "放置镜子反射餐桌，象征丰盛。"
+      },
+      "kids_room": {
+        "wealth": "在此处设置书桌，增强专注力和学业成绩。",
+        "sickness": "避免将床放在此区域。添加平静的蓝色或绿色元素。",
+        "missing": "使用明快的颜色和励志艺术品补全此角落。"
+      }
+    },
+    "errors": {
+      "noRoom": "请先绘制您的房间形状",
+      "noDoor": "请标记门的位置",
+      "disconnected": "您的房间存在不连续区域。系统将只分析最大的连通区域。"
+    },
+    "buttons": {
+      "next": "下一步",
+      "back": "返回",
+      "done": "完成",
+      "startOver": "重新开始"
+    }
+  }
+}

@@ -1,0 +1,14 @@
+---
+import { getLocaleFromUrl, formatDate } from '../utils/i18n';
+
+interface Props {
+  date: Date;
+}
+
+const { date } = Astro.props;
+const locale = getLocaleFromUrl(Astro.url);
+---
+
+<time datetime={date.toISOString()} class="text-neutral-500 text-sm">
+  {formatDate(date, locale)}
+</time>

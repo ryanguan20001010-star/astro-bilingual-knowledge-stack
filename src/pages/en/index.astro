@@ -1,0 +1,26 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getTranslations } from '../../utils/i18n';
+
+const t = getTranslations('en');
+---
+
+<BaseLayout title="Bilingual Knowledge Stack" description="An open-source Astro toolkit for bilingual sites.">
+  <section class="py-12">
+    <h1 class="text-4xl font-bold mb-4">Welcome to the Bilingual Stack</h1>
+    <p class="text-lg text-neutral-600 mb-8">
+      A production-tested toolkit for maintaining bilingual Astro knowledge websites on Cloudflare.
+    </p>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <a href="/en/blog" class="p-6 border border-neutral-200 rounded-lg hover:border-accent transition-colors">
+        <h2 class="text-xl font-semibold mb-2">Blog</h2>
+        <p class="text-neutral-500">Read our latest articles and updates.</p>
+      </a>
+      <a href="/en/docs" class="p-6 border border-neutral-200 rounded-lg hover:border-accent transition-colors">
+        <h2 class="text-xl font-semibold mb-2">Documentation</h2>
+        <p class="text-neutral-500">Explore the knowledge base and glossary.</p>
+      </a>
+    </div>
+  </section>
+</BaseLayout>

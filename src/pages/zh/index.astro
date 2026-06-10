@@ -1,0 +1,26 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getTranslations } from '../../utils/i18n';
+
+const t = getTranslations('zh');
+---
+
+<BaseLayout title="双语知识栈" description="一个开源的 Astro 双语网站工具栈。">
+  <section class="py-12">
+    <h1 class="text-4xl font-bold mb-4">欢迎来到双语知识栈</h1>
+    <p class="text-lg text-neutral-600 mb-8">
+      一个经过生产环境验证的，用于在 Cloudflare 上维护 Astro 双语知识站的工具栈。
+    </p>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <a href="/zh/blog" class="p-6 border border-neutral-200 rounded-lg hover:border-accent transition-colors">
+        <h2 class="text-xl font-semibold mb-2">博客</h2>
+        <p class="text-neutral-500">阅读我们的最新文章和更新。</p>
+      </a>
+      <a href="/zh/docs" class="p-6 border border-neutral-200 rounded-lg hover:border-accent transition-colors">
+        <h2 class="text-xl font-semibold mb-2">文档</h2>
+        <p class="text-neutral-500">探索知识库和词汇表。</p>
+      </a>
+    </div>
+  </section>
+</BaseLayout>

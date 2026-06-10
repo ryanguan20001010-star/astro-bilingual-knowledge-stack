@@ -1,0 +1,41 @@
+---
+import '../styles/global.css';
+import BaseHead from '../components/BaseHead.astro';
+import LanguagePicker from '../components/LanguagePicker.astro';
+import { getLocaleFromUrl } from '../utils/i18n';
+
+interface Props {
+  title: string;
+  description: string;
+}
+
+const { title, description } = Astro.props;
+const locale = getLocaleFromUrl(Astro.url);
+---
+
+<!doctype html>
+<html lang={locale}>
+  <head>
+    <BaseHead title={title} description={description} />
+  </head>
+  <body class="bg-neutral-50 text-neutral-900 antialiased">
+    <header class="border-b border-neutral-200">
+      <div class="max-w-content mx-auto px-4 py-4 flex justify-between items-center">
+        <a href={locale === 'en' ? '/' : '/zh/'} class="font-bold text-lg tracking-tight">
+          Bilingual Stack
+        </a>
+        <nav class="flex items-center gap-4">
+          <a href={locale === 'en' ? '/blog' : '/zh/blog'} class="text-sm hover:text-accent">Blog</a>
+          <a href={locale === 'en' ? '/docs' : '/zh/docs'} class="text-sm hover:text-accent">Docs</a>
+          <LanguagePicker />
+        </nav>
+      </div>
+    </header>
+    <main class="max-w-content mx-auto px-4 py-8">
+      <slot />
+    </main>
+    <footer class="border-t border-neutral-200 mt-12 py-8 text-center text-neutral-500 text-sm">
+      <p>&copy; {new Date().getFullYear()} Bilingual Knowledge Stack. MIT License.</p>
+    </footer>
+  </body>
+</html>

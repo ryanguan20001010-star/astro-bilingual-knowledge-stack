@@ -1,0 +1,23 @@
+name: Post Deploy Smoke Check
+
+on:
+  workflow_dispatch:
+    inputs:
+      base_url:
+        description: 'Target URL'
+        required: true
+        default: 'http://localhost:4321'
+
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v3
+        with:
+          version: 9
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - run: pnpm install
+      - run: pnpm run smoke:prod -- --base ${{ github.event.inputs.base_url }}
