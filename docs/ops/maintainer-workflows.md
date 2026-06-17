@@ -11,10 +11,11 @@ Running a content-heavy documentation or knowledge site requires discipline. Thi
 ## 2. Pre-Commit / Pre-Push Checks
 
 Before opening a PR, run:
+
 ```bash
-pnpm check:content
-pnpm check:links
-pnpm check:images
+pnpm run check:content
+pnpm run check:links
+pnpm run check:images
 ```
 
 ## 3. Review Process
@@ -24,14 +25,17 @@ The `ci.yml` and `content-quality.yml` GitHub Actions will automatically run the
 ## 4. Release and Changelog
 
 To generate an automatic changelog update based on your Git history:
+
 ```bash
-pnpm update-log
+pnpm run update-log
 ```
+
 This script reads your commits and updates `WEBSITE_UPDATES.md` (or `CHANGELOG.md` depending on configuration).
 
 ## 5. Post-Deploy Validation
 
 After deployment, the smoke test script hits critical routes to ensure they return 200 OK and didn't break during build:
+
 ```bash
-pnpm smoke:prod --base https://your-site.com
+pnpm run smoke:prod -- --base https://your-site.com
 ```

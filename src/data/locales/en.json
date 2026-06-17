@@ -1,22 +1,15 @@
 {
   "site": {
-    "name": "fengshuiism",
-    "tagline": "Harmonize Your Space"
+    "name": "Astro Bilingual Knowledge Stack",
+    "tagline": "A minimal bilingual Astro starter for knowledge sites"
   },
   "nav": {
     "home": "Home",
     "blog": "Blog",
-    "tools": "Tools",
-    "kuaCalculator": "Kua Calculator",
-    "items": "Feng Shui Items",
-    "search": "Search",
-    "about": "About"
+    "docs": "Docs"
   },
   "footer": {
-    "copyright": "© 2025 fengshuiism. All rights reserved.",
-    "privacy": "Privacy Policy",
-    "terms": "Terms of Use",
-    "affiliate": "Affiliate Disclaimer",
+    "copyright": "MIT licensed starter template",
     "rss": "RSS Feed"
   },
   "blog": {
@@ -26,187 +19,19 @@
     "updatedOn": "Updated on",
     "byAuthor": "by",
     "categories": {
-      "bedroom": "Bedroom",
-      "living-room": "Living Room",
-      "office": "Office",
-      "kitchen": "Kitchen",
-      "bathroom": "Bathroom",
       "general": "General",
-      "courtyard": "Courtyard",
-      "outdoor": "Outdoor"
+      "guide": "Guide",
+      "reference": "Reference",
+      "release": "Release"
     },
-    "noArticles": "No articles found in this category.",
-    "relatedArticles": "Related Articles",
-    "difficulty": {
-      "label": "Difficulty",
-      "beginner": "Beginner",
-      "intermediate": "Intermediate",
-      "advanced": "Advanced",
-      "expert": "Expert",
-      "all": "All Levels"
-    }
-  },
-  "calculator": {
-    "title": "Kua Number Calculator",
-    "subtitle": "Discover your personal feng shui directions",
-    "yearLabel": "Birth Year",
-    "genderLabel": "Gender",
-    "male": "Male",
-    "female": "Female",
-    "earlyYearLabel": "Born between Jan 1st and Feb 3rd?",
-    "calculate": "Calculate My Kua",
-    "result": "Your Kua Number",
-    "trigram": "Trigram",
-    "group": "Group",
-    "eastGroup": "East Group",
-    "westGroup": "West Group",
-    "auspicious": "Auspicious Directions",
-    "inauspicious": "Inauspicious Directions"
-  },
-  "items": {
-    "title": "Feng Shui Items Database",
-    "subtitle": "Curated items to enhance your space",
-    "filterByCategory": "Filter by Category",
-    "filterByElement": "Filter by Element",
-    "allCategories": "All Categories",
-    "allElements": "All Elements",
-    "buyOnAmazon": "Buy on Amazon",
-    "placement": "Recommended Placement",
-    "element": "Element",
-    "searchPlaceholder": "Search items..."
-  },
-  "cookie": {
-    "message": "We use cookies to enhance your experience and serve personalized ads.",
-    "acceptAll": "Accept All",
-    "rejectAll": "Reject All",
-    "learnMore": "Learn More"
+    "noArticles": "No articles found.",
+    "relatedArticles": "Related Articles"
   },
   "errors": {
     "404": {
       "title": "Page Not Found",
       "message": "The page you're looking for doesn't exist.",
       "backHome": "Back to Home"
-    },
-    "500": {
-      "title": "Server Error",
-      "message": "Something went wrong. Please try again later."
-    }
-  },
-  "share": {
-    "copyLink": "Copy Link",
-    "copied": "Copied!",
-    "shareOn": "Share on"
-  },
-  "scanner": {
-    "title": "Pixel Room Scanner",
-    "subtitle": "Scan your room feng shui in 30 seconds",
-    "steps": {
-      "select": "Select Room",
-      "draw": "Draw Layout",
-      "orient": "Set Direction",
-      "result": "View Results"
-    },
-    "rooms": {
-      "bedroom": {
-        "label": "Bedroom",
-        "subtitle": "Sleep & Love"
-      },
-      "office": {
-        "label": "Home Office",
-        "subtitle": "Wealth & Focus"
-      },
-      "living_room": {
-        "label": "Living Room",
-        "subtitle": "Harmony"
-      },
-      "kitchen": {
-        "label": "Kitchen",
-        "subtitle": "Health & Wealth"
-      },
-      "dining_room": {
-        "label": "Dining Room",
-        "subtitle": "Family Bond"
-      },
-      "kids_room": {
-        "label": "Kids Room",
-        "subtitle": "Growth & Study"
-      }
-    },
-    "canvas": {
-      "drawMode": "Draw",
-      "eraseMode": "Erase",
-      "doorMode": "Door",
-      "clear": "Clear All",
-      "undo": "Undo",
-      "doorHint": "Tap an edge cell to place your door",
-      "proportionHint": "Draw the approximate shape of your room. Exact measurements are not needed.",
-      "hallwayHint": "Tip: If your room has an entryway or hallway, draw it first, then place the door at the end."
-    },
-    "compass": {
-      "title": "Calibrate Direction",
-      "autoMode": "Auto (Sensor)",
-      "manualMode": "Manual",
-      "permissionRequest": "Enable compass sensor for automatic detection",
-      "enableSensor": "Enable Sensor",
-      "manualHint": "Rotate to align with your room's actual direction",
-      "snapHint": "Snapped to {direction}",
-      "currentAngle": "{angle}°"
-    },
-    "result": {
-      "yearLabel": "Flying Star Year",
-      "wealthLabel": "Wealth Position",
-      "sicknessLabel": "Sickness Position",
-      "wenchangLabel": "Academic Position",
-      "peachBlossomLabel": "Romance Position",
-      "taiChiLabel": "Tai Chi Point",
-      "saveImage": "Save as Image",
-      "generating": "Generating...",
-      "shareQuote": "Just feng shui'd my {roomType} in 30 seconds! 🎯",
-      "sectorActivated": "Your {direction} sector is activated! Keep this area clean and well-lit.",
-      "sectorNotActivated": "The {direction} sector has low coverage. Consider using mirrors to symbolically expand this area."
-    },
-    "advice": {
-      "bedroom": {
-        "wealth": "Place a red lamp or crystal here to activate wealth energy while you sleep.",
-        "sickness": "Avoid placing your bed in this area. Add metal wind chimes to disperse negative energy.",
-        "missing": "Your bedroom is missing the wealth corner. Place a mirror on the adjacent wall to symbolically extend the space."
-      },
-      "office": {
-        "wealth": "Keep this area bright and clutter-free. A prosperity plant will enhance wealth energy.",
-        "sickness": "Avoid facing this direction when working. Use salt lamps to purify the energy.",
-        "missing": "Add a small fountain or water feature near this area to attract wealth."
-      },
-      "living_room": {
-        "wealth": "Place your main seating to face this direction for enhanced prosperity.",
-        "sickness": "Avoid placing sofas or chairs in this area. Add live plants to neutralize negative energy.",
-        "missing": "Hang a mirror on the wall to symbolically complete this corner."
-      },
-      "kitchen": {
-        "wealth": "Keep the stove clean and functional. Cook often to activate wealth energy.",
-        "sickness": "Ensure good ventilation in this area. Avoid storing expired food here.",
-        "missing": "Add a small plant on the counter to extend the kitchen's energy."
-      },
-      "dining_room": {
-        "wealth": "Host gatherings often. A round table enhances family harmony and prosperity.",
-        "sickness": "Avoid heated arguments at the table. Use soft lighting to maintain peace.",
-        "missing": "Place a mirror to reflect the dining table, symbolizing abundance."
-      },
-      "kids_room": {
-        "wealth": "Set up the study desk here for enhanced focus and academic success.",
-        "sickness": "Avoid placing the bed in this area. Add calming blue or green elements.",
-        "missing": "Use cheerful colors and inspiring artwork to complete this corner."
-      }
-    },
-    "errors": {
-      "noRoom": "Please draw your room shape first",
-      "noDoor": "Please mark the door position",
-      "disconnected": "Your room has disconnected areas. Only the largest connected region will be analyzed."
-    },
-    "buttons": {
-      "next": "Next",
-      "back": "Back",
-      "done": "Done",
-      "startOver": "Start Over"
     }
   }
 }

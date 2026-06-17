@@ -1,8 +1,9 @@
 {
   "name": "astro-bilingual-knowledge-stack",
-  "description": "A production-ready bilingual (CJK/EN) i18n content framework for Astro.",
+  "description": "A minimal bilingual Astro starter for knowledge sites.",
   "type": "module",
   "version": "0.1.0",
+  "packageManager": "pnpm@10.28.1",
   "keywords": [
     "astro",
     "astro-theme",
@@ -24,16 +25,17 @@
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "astro build",
+    "build": "astro check && astro build",
     "preview": "astro preview",
     "astro": "astro",
     "check:content": "node tools/check-content/run.mjs",
     "check:links": "node tools/check-links/run.mjs",
     "check:images": "node tools/check-images/run.mjs",
     "check:seo": "node tools/check-seo/run.mjs",
-    "smoke:prod": "node tools/smoke-production/run.mjs --base http://localhost:4321 --outdir output/smoke-production",
+    "smoke:prod": "node tools/smoke-production/run.mjs",
     "update-log": "node tools/update-log/run.mjs",
-    "test": "vitest run"
+    "test": "vitest run",
+    "verify": "pnpm run check:content && pnpm run check:links && pnpm run check:images && pnpm run check:seo && pnpm test && pnpm run build"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.4",

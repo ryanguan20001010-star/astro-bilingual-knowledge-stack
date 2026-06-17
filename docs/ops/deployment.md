@@ -14,10 +14,14 @@ This project is optimized for deployment on Cloudflare Pages, but can be adapted
    - `NODE_VERSION`: `20`
 8. Click "Save and Deploy".
 
-## Automated Deployments via GitHub Actions
+## Optional Smoke Checks
 
-The provided `.github/workflows/deploy.yml` requires the following secrets to be set in your GitHub repository:
-- `CLOUDFLARE_API_TOKEN`
-- `CLOUDFLARE_ACCOUNT_ID`
+This repository does not ship a provider-specific deploy workflow in `v0.1.0`.
+Deployment should happen through your host's standard integration.
 
-It will automatically deploy the `main` branch to Cloudflare.
+After deployment, you can run `.github/workflows/release-smoke.yml` manually with
+your public site URL. Locally, you can run the same check with:
+
+```bash
+pnpm run smoke:prod -- --base https://your-site.example
+```

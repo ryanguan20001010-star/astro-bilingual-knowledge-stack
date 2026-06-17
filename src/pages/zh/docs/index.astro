@@ -1,0 +1,20 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="文档 | 双语知识栈" description="Astro 双语模板的启动文档。">
+  <article class="prose prose-neutral max-w-none">
+    <h1>文档</h1>
+    <p>
+      这个模板的第一版刻意保持小范围：双语路由、类型化内容、基础质量检查，
+      以及可选的 smoke test。
+    </p>
+    <h2>推荐检查</h2>
+    <ul>
+      <li><code>pnpm run check:content</code></li>
+      <li><code>pnpm run check:links</code></li>
+      <li><code>pnpm test</code></li>
+      <li><code>pnpm run build</code></li>
+    </ul>
+  </article>
+</BaseLayout>

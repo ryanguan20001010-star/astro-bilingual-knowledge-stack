@@ -1,28 +1,26 @@
 ---
-name: Bug Report
-about: Create a report to help us improve
-title: '[BUG] '
+name: Bug report
+about: Report a reproducible problem in the starter or maintainer scripts.
+title: "[Bug]: "
 labels: bug
-assignees: ''
-
 ---
 
-**Describe the bug**
-A clear and concise description of what the bug is.
+## What Happened?
 
-**To Reproduce**
-Steps to reproduce the behavior:
-1. Go to '...'
-2. Run command '....'
-3. See error
+Describe the problem and what you expected instead.
 
-**Expected behavior**
-A clear and concise description of what you expected to happen.
+## Reproduction
 
-**Environment:**
- - OS: [e.g. macOS]
- - Node Version: [e.g. 20.x]
- - Astro Version: [e.g. 4.x]
+1. First step.
+2. Second step.
+3. Third step.
 
-**Additional context**
-Add any other context about the problem here.
+## Environment
+
+- Node version:
+- pnpm version:
+- OS:
+
+## Logs
+
+Paste only the relevant error lines. Do not include secrets or private URLs.

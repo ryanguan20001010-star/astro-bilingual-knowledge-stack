@@ -11,12 +11,14 @@ Place your English markdown files in `src/content/blog/en/` and your Chinese (or
 ## 2. Update Frontmatter
 
 Ensure your markdown files comply with the Zod schema defined in `src/content/config.ts`. The required fields are:
+
 - `title`
 - `description`
 - `pubDate`
 - `locale` ('en' or 'zh')
 
 Example:
+
 ```yaml
 ---
 title: "My Existing Post"
@@ -29,6 +31,7 @@ locale: "en"
 ## 3. Run Quality Checks
 
 After moving your files, run the built-in quality gates to ensure no links were broken during the migration:
+
 ```bash
 pnpm run check:links
 pnpm run check:images

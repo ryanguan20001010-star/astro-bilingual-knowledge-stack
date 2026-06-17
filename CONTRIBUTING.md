@@ -14,20 +14,25 @@ First off, thank you for considering contributing to this project! It's people l
 ## Development Workflow
 
 1. Install dependencies:
+
    ```bash
    pnpm install
    ```
+
 2. Start the development server:
+
    ```bash
    pnpm run dev
    ```
+
 3. Run the quality gates before committing:
+
    ```bash
    pnpm run check:content
    pnpm run check:links
    ```
 
-## Beginners Welcome!
+## Beginners Welcome
 
-If you're new to open source, this is a great place to start. 
+If you're new to open source, this is a great place to start.
 Look out for issues labeled `good first issue` — they are specifically scoped for new contributors and we are more than happy to help you get your first PR merged!

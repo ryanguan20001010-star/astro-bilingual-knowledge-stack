@@ -47,10 +47,13 @@ export function t(locale: Locale, key: string): string {
 export function getLocalizedPath(path: string, targetLocale: Locale): string {
   const cleanPath = path.startsWith('/') ? path.slice(1) : path;
   const isZhPath = cleanPath.startsWith('zh/') || cleanPath === 'zh';
+  const isEnPath = cleanPath.startsWith('en/') || cleanPath === 'en';
   
   let basePath: string;
   if (isZhPath) {
     basePath = cleanPath.slice(3); // Remove 'zh/' or 'zh'
+  } else if (isEnPath) {
+    basePath = cleanPath.slice(3); // Remove 'en/' or 'en'
   } else {
     basePath = cleanPath;
   }
@@ -59,9 +62,8 @@ export function getLocalizedPath(path: string, targetLocale: Locale): string {
 
   if (targetLocale === 'zh') {
     return localizedBasePath ? `/zh/${localizedBasePath}` : '/zh/';
-  } else {
-    return localizedBasePath ? `/${localizedBasePath}` : '/';
   }
+  return localizedBasePath ? `/en/${localizedBasePath}` : '/en/';
 }
 
 /**

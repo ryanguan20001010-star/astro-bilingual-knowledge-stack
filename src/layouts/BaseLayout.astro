@@ -25,8 +25,8 @@ const locale = getLocaleFromUrl(Astro.url);
           Bilingual Stack
         </a>
         <nav class="flex items-center gap-4">
-          <a href={locale === 'en' ? '/blog' : '/zh/blog'} class="text-sm hover:text-accent">Blog</a>
-          <a href={locale === 'en' ? '/docs' : '/zh/docs'} class="text-sm hover:text-accent">Docs</a>
+          <a href={locale === 'en' ? '/en/blog' : '/zh/blog'} class="text-sm hover:text-accent">Blog</a>
+          <a href={locale === 'en' ? '/en/docs' : '/zh/docs'} class="text-sm hover:text-accent">Docs</a>
           <LanguagePicker />
         </nav>
       </div>
