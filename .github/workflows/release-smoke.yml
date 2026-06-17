@@ -8,6 +8,9 @@ on:
         required: true
         default: 'http://localhost:4321'
 
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
 jobs:
   smoke:
     runs-on: ubuntu-latest
@@ -18,6 +21,6 @@ jobs:
           version: 10.28.1
       - uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: '24'
       - run: pnpm install --frozen-lockfile
       - run: pnpm run smoke:prod -- --base ${{ github.event.inputs.base_url }}
