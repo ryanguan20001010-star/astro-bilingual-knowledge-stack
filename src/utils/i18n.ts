@@ -18,7 +18,8 @@ const locales: Record<Locale, typeof enLocale> = {
  */
 export function getLocaleFromUrl(url: URL | string): Locale {
   const pathname = typeof url === 'string' ? url : url.pathname;
-  return pathname.startsWith('/zh') ? 'zh' : 'en';
+  const segments = pathname.split('/').filter(Boolean);
+  return segments.includes('zh') ? 'zh' : 'en';
 }
 
 /**
