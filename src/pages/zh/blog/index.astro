@@ -7,7 +7,8 @@ const posts = await getCollection('blog', ({ data }) => {
   return data.locale === 'zh' && !data.draft;
 });
 const sortedPosts = sortPostsByDate(posts);
-const withBase = (path: string) => `${import.meta.env.BASE_URL}${path.replace(/^\//, '')}`;
+const basePath = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL : `${import.meta.env.BASE_URL}/`;
+const withBase = (path: string) => `${basePath}${path.replace(/^\//, '')}`;
 ---
 
 <BaseLayout title="博客 | 双语知识栈" description="文章和更新。">

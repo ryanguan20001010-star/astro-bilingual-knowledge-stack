@@ -1,6 +1,7 @@
 ---
 export const prerender = true;
-const englishHome = `${import.meta.env.BASE_URL}en/`;
+const basePath = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL : `${import.meta.env.BASE_URL}/`;
+const englishHome = `${basePath}en/`;
 ---
 <!doctype html>
 <html lang="en">
