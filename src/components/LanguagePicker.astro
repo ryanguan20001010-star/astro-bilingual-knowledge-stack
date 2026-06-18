@@ -5,7 +5,7 @@ const locale = getLocaleFromUrl(Astro.url);
 const currentPath = Astro.url.pathname;
 
 const targetLocale = locale === 'en' ? 'zh' : 'en';
-const targetPath = getLocalizedPath(currentPath, targetLocale);
+const targetPath = `${import.meta.env.BASE_URL}${getLocalizedPath(currentPath, targetLocale).replace(/^\//, '')}`;
 ---
 
 <a 

@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+const withBase = (path: string) => `${import.meta.env.BASE_URL}${path.replace(/^\//, '')}`;
 ---
 
 <BaseLayout title="Bilingual Knowledge Stack" description="An open-source Astro toolkit for bilingual sites.">
@@ -10,11 +11,11 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
     </p>
     
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-      <a href="/en/blog" class="p-6 border border-neutral-200 rounded-lg hover:border-accent transition-colors">
+      <a href={withBase('/en/blog')} class="p-6 border border-neutral-200 rounded-lg hover:border-accent transition-colors">
         <h2 class="text-xl font-semibold mb-2">Blog</h2>
         <p class="text-neutral-500">Read our latest articles and updates.</p>
       </a>
-      <a href="/en/docs" class="p-6 border border-neutral-200 rounded-lg hover:border-accent transition-colors">
+      <a href={withBase('/en/docs')} class="p-6 border border-neutral-200 rounded-lg hover:border-accent transition-colors">
         <h2 class="text-xl font-semibold mb-2">Documentation</h2>
         <p class="text-neutral-500">Explore the knowledge base and glossary.</p>
       </a>

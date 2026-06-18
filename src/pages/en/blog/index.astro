@@ -7,6 +7,7 @@ const posts = await getCollection('blog', ({ data }) => {
   return data.locale === 'en' && !data.draft;
 });
 const sortedPosts = sortPostsByDate(posts);
+const withBase = (path: string) => `${import.meta.env.BASE_URL}${path.replace(/^\//, '')}`;
 ---
 
 <BaseLayout title="Blog | Bilingual Stack" description="Articles and updates.">
@@ -16,7 +17,7 @@ const sortedPosts = sortPostsByDate(posts);
     {sortedPosts.map(post => (
       <article class="p-6 border border-neutral-200 rounded-lg">
         <h2 class="text-xl font-semibold mb-2">
-          <a href={`/en/blog/${post.slug}`} class="hover:text-accent">{post.data.title}</a>
+          <a href={withBase(`/en/blog/${post.slug}`)} class="hover:text-accent">{post.data.title}</a>
         </h2>
         <p class="text-neutral-600 mb-4">{post.data.description}</p>
         <time class="text-sm text-neutral-400">{post.data.pubDate.toLocaleDateString('en-US')}</time>

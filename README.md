@@ -6,6 +6,8 @@
 
 > A minimal bilingual Astro starter for knowledge sites that need typed content, locale-aware routing, and maintainer quality gates.
 
+Demo: https://ryanguan20001010-star.github.io/astro-bilingual-knowledge-stack/
+
 ## What This Is
 
 This repository packages a small, reusable slice of a bilingual Astro publishing workflow:

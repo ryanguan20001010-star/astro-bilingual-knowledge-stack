@@ -6,7 +6,8 @@ import mdx from '@astrojs/mdx';
 import partytown from '@astrojs/partytown';
 
 export default defineConfig({
-  site: 'http://localhost:4321', // Replace with your production URL
+  site: 'https://ryanguan20001010-star.github.io',
+  base: '/astro-bilingual-knowledge-stack',
   trailingSlash: 'ignore',
   integrations: [
     tailwind(),
