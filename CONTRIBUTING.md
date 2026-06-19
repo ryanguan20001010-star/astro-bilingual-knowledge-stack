@@ -25,14 +25,20 @@ First off, thank you for considering contributing to this project! It's people l
    pnpm run dev
    ```
 
-3. Run the quality gates before committing:
+3. Run the full verification suite (quality gates) before committing:
 
    ```bash
-   pnpm run check:content
-   pnpm run check:links
+   pnpm run verify
    ```
+
+   For a detailed explanation of what is covered, see [docs/quality-gates.md](docs/quality-gates.md).
 
 ## Beginners Welcome
 
 If you're new to open source, this is a great place to start.
 Look out for issues labeled `good first issue` — they are specifically scoped for new contributors and we are more than happy to help you get your first PR merged!
+
+## Governance and Security
+
+- **Maintainer Roles:** For details on how issues and PRs are triaged, reviewed, and released, see [MAINTAINERS.md](MAINTAINERS.md).
+- **Security Vulnerabilities:** To report security concerns, please consult [SECURITY.md](SECURITY.md).

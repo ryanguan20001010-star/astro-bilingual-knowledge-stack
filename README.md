@@ -21,6 +21,14 @@ This repository packages a small, reusable slice of a bilingual Astro publishing
 
 It intentionally excludes paid content, commerce integrations, private analytics, brand assets, real production snapshots, and live cloud bindings.
 
+## Why This Matters
+
+This project provides a clean, verification-first foundation for managing bilingual Astro knowledge sites. Rather than starting from scratch, developers gain:
+- **Locale-Aware Routing:** Out-of-the-box support for routing patterns across multiple languages (e.g., English and Chinese).
+- **Strict Content Validation:** Built-in quality gates that validate frontmatter structures, check for broken links/images, and verify SEO metadata correctness before building.
+- **Maintainer Quality Gates:** Automated pre-submit verifications that ensure only high-quality, compliant code and content are merged.
+- **Clean OSS Extraction Boundaries:** An architecture designed from the ground up to keep private brand assets or commercial secrets separate from the open-source publishing workflow.
+
 ## Quick Start
 
 ```bash
@@ -54,7 +62,11 @@ tools/smoke-production/   Optional public-route smoke checker
 - [Migration Guide](docs/migration-guide.md): Learn how to migrate your existing markdown site to this framework.
 - [Open Source Scope](OPEN_SOURCE_SCOPE.md): Understand what belongs in this OSS template.
 - [Private Exclusions](PRIVATE_EXCLUSIONS.md): Review what must never be copied from a private or commercial site.
+- [Quality Gates](docs/quality-gates.md): Understand the pre-submit verification process.
+- [Roadmap](ROADMAP.md): View our near-term plans and feature roadmap.
+- [Maintainers](MAINTAINERS.md): Meet the maintainers and understand their responsibilities.
 - [Contributing](CONTRIBUTING.md): Find out how to contribute.
+- [Security Policy](SECURITY.md): Review how we handle security vulnerabilities.
 
 ## License
 

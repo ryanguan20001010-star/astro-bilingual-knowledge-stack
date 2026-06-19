@@ -12,19 +12,19 @@ https://ryanguan20001010-star.github.io/astro-bilingual-knowledge-stack/
 
 ## Describe Your Role
 
-I am the primary maintainer of `astro-bilingual-knowledge-stack`. I extracted the reusable bilingual Astro workflow into a clean public project, removed private and commercial coupling, maintain the example site and CI, triage issues, review contributions, and keep the documentation aligned with the code.
+I am the primary maintainer. I designed the structure, extracted the bilingual publishing code from internal coupling into a clean OSS repository, and set up the quality gate tooling. I actively manage the issue/PR workflow, oversee the v0.2/v0.3 roadmap progression, and maintain CI validation and the public demo to ensure the project remains stable for the developer ecosystem.
 
 ## Why Does This Repository Qualify?
 
-`astro-bilingual-knowledge-stack` is a public MIT-licensed starter for bilingual Astro knowledge sites. It provides neutral English/Chinese example content, typed content schemas, i18n helpers, quality-check scripts, CI workflows, governance docs, and a v0.1.0 release. It is scoped as reusable maintainer infrastructure, not a public copy of the private site it was extracted from.
+This public, MIT-licensed repository provides a clean, CI-verified bilingual Astro publishing framework. It features typed content schemas, locale-aware routing, and automated pre-submit quality gates (verifying content, links, images, SEO, and tests). It has clear maintainer guidelines, a roadmap, and a public demo, offering immediate developer value without commercial or private dependencies.
 
 ## How Will You Use API Credits?
 
-I would use API credits for open-source maintenance: reviewing PRs for i18n, routing, and schema regressions; triaging issues around Astro content validation and CI failures; improving bilingual docs and examples; drafting release notes from verified changes; and analyzing smoke-check or build failures while keeping the tooling generic.
+I will use credits to automate maintainer workflows: summarizing and triaging community issues/PRs, generating change summaries for release documentation, analyzing CI/build logs to diagnose compatibility issues with newer Astro versions, and suggesting improvements to bilingual documentation and error reporting to support contributors as the repository grows.
 
 ## Anything Else We Should Know?
 
-This is a conservative v0.1.0 release with clear exclusions for paid content, commerce integrations, private analytics, brand assets, live cloud bindings, and research materials. The project should not be evaluated as a high-adoption library yet; its current value is a clean, CI-verified, reusable workflow for bilingual Astro knowledge sites.
+The repository has been strengthened with formal maintainer/roadmap docs and CI validation gates. We avoid claims of broad adoption or scale; our focus is offering a robust, verification-first starter for bilingual Astro sites. All components exclude paid/private integrations, preserving a clean open-source boundary. A live, automated public demo is available.
 
 ## Remaining User-Specific Fields
 
