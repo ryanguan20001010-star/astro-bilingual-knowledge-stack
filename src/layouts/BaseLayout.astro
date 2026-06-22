@@ -36,7 +36,7 @@ const withBase = (path: string) => `${basePath}${path.replace(/^\//, '')}`;
           Bilingual Stack
         </a>
         <nav class="flex items-center gap-4">
-          <a href={locale === 'en' ? withBase('/en/docs') : withBase('/zh/blog')} class="text-sm hover:text-accent">Blog</a>
+          <a href={locale === 'en' ? withBase('/en/blogs') : withBase('/zh/blog')} class="text-sm hover:text-accent">Blog</a>
           <a href={locale === 'en' ? withBase('/en/docs') : withBase('/zh/docs')} class="text-sm hover:text-accent">Docs</a>
           <ThemeToggle />
           <LanguagePicker />
