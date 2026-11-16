@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.1.2] - 2026-11-16
+
+### Added
+- Dark mode toggle (PR #4, closes #3).
+
+### Changed
+- Migration grammar and clarity (PR #6, closes #2).
+
 ## [0.1.0] - 2026-06-10
 
 ### Added
