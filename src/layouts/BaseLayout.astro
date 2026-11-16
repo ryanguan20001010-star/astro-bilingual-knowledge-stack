@@ -3,6 +3,7 @@ import '../styles/global.css';
 import BaseHead from '../components/BaseHead.astro';
 import LanguagePicker from '../components/LanguagePicker.astro';
 import { getLocaleFromUrl } from '../utils/i18n';
+import ThemeToggle from '../components/ThemeToggle.astro';
 
 interface Props {
   title: string;
@@ -19,9 +20,17 @@ const withBase = (path: string) => `${basePath}${path.replace(/^\//, '')}`;
 <html lang={locale}>
   <head>
     <BaseHead title={title} description={description} />
+    <script is:inline>
+  const savedTheme = localStorage.getItem('theme');
+  const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+  if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
+    document.documentElement.classList.add('dark');
+  }
+</script>
   </head>
-  <body class="bg-neutral-50 text-neutral-900 antialiased">
-    <header class="border-b border-neutral-200">
+  <body class="bg-neutral-50 text-neutral-900 antialiased dark:bg-neutral-950 dark:text-neutral-100">
+    <header class="border-b border-neutral-200 dark:border-neutral-800">
       <div class="max-w-content mx-auto px-4 py-4 flex justify-between items-center">
         <a href={locale === 'en' ? withBase('/en/') : withBase('/zh/')} class="font-bold text-lg tracking-tight">
           Bilingual Stack
@@ -29,6 +38,7 @@ const withBase = (path: string) => `${basePath}${path.replace(/^\//, '')}`;
         <nav class="flex items-center gap-4">
           <a href={locale === 'en' ? withBase('/en/blog') : withBase('/zh/blog')} class="text-sm hover:text-accent">Blog</a>
           <a href={locale === 'en' ? withBase('/en/docs') : withBase('/zh/docs')} class="text-sm hover:text-accent">Docs</a>
+          <ThemeToggle />
           <LanguagePicker />
         </nav>
       </div>
@@ -36,7 +46,7 @@ const withBase = (path: string) => `${basePath}${path.replace(/^\//, '')}`;
     <main class="max-w-content mx-auto px-4 py-8">
       <slot />
     </main>
-    <footer class="border-t border-neutral-200 mt-12 py-8 text-center text-neutral-500 text-sm">
+    <footer class="border-t border-neutral-200 mt-12 py-8 text-center text-neutral-500 text-sm dark:border-neutral-800 dark:text-neutral-400">
       <p>&copy; {new Date().getFullYear()} Bilingual Knowledge Stack. MIT License.</p>
     </footer>
   </body>

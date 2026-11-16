@@ -9,6 +9,6 @@ const { date } = Astro.props;
 const locale = getLocaleFromUrl(Astro.url);
 ---
 
-<time datetime={date.toISOString()} class="text-neutral-500 text-sm">
+<time datetime={date.toISOString()} class="text-neutral-500 text-sm dark:text-neutral-400">
   {formatDate(date, locale)}
 </time>
