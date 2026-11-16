@@ -13,8 +13,8 @@ This document outlines what parts of the original private repository have been e
    - Generic schemas for blog posts and glossary/wiki entries.
 
 3. **Generic UI Components (`src/components/`)**
-   - `LanguagePicker`, `TableOfContents`, `ThemeToggle`, `FormattedDate`, `SearchDialog`.
-   - Base SEO components (`BaseHead`, `JsonLD`).
+  - `LanguagePicker`, `ThemeToggle`, `FormattedDate`.
+  - Base SEO components (`BaseHead`).
 
 4. **Maintenance Tooling (`tools/`)**
    - `check-links`: Internal and external broken link checker.
